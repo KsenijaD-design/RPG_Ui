@@ -11,11 +11,16 @@ public abstract class character : MonoBehaviour
     }
 
     public abstract void Attack(character toHit);
+    public abstract void Die();
 
-    public void TakeDamage(float damage)
+    public virtual void TakeDamage(float damage)
     {
         health -= damage;
         Debug.Log(charName + " took " + damage + " damage. Health - " + health);
+        if (health <= 0)
+        {
+            Die();
+        }
     }
 
     public void TakeDamage(Weapon thrownWeapon)

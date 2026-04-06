@@ -1,15 +1,26 @@
 using UnityEngine;
 
-public class enemy : character
+public abstract class enemy : character
 {
-    [SerializeField] private float minDamage, maxDamage;
+    [SerializeField] private Sprite enemyImage;
+    
+    
+    public Sprite EnemyImage
+    {
+        get { return enemyImage; }
+    }
     
     public override void Attack(character toHit)
     {
-        float damage = Random.Range(minDamage, maxDamage);
-        toHit.TakeDamage(damage);
-    } 
-    
+       
+    }
+
+    public override void Die()
+    {
+        FindObjectOfType<GameManager>().SpawnNewEnemy();
+        Destroy(gameObject); 
+    }
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {

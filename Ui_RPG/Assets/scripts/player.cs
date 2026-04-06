@@ -3,6 +3,10 @@ using UnityEngine;
 public class player : character
 {
     [SerializeField] private Weapon activeWeapon;
+    [SerializeField] private bool shieldActive = false;
+    [SerializeField] private GameObject shield;
+    [SerializeField] private float shieldProtection = 0.5f;
+    [SerializeField] private float shieldBreak = 0.20f;
     
     public override void Attack(character toHit)
     {
@@ -10,14 +14,29 @@ public class player : character
         //float damage = activeWeapon.GetDamage();
         //toHit.TakeDamage(damage);
     }
-    void Start()
+
+    public override void Die()
     {
-        
+        FindObjectOfType<GameManager>().GameOver();
     }
 
-    
-    void Update()
+    public void ShieldActive()
     {
-        
+        shieldActive = !shieldActive;
+        shield.SetActive(shieldActive);
+    }
+
+    public override void TakeDamage(float damage)
+    {
+        if (shieldActive)
+        {
+            damage *= (1f - shieldProtection) ;
+            if (Random.value < shieldBreak)
+            {
+                shieldActive = false;
+                Debug.Log("Shield broken!");
+            }
+        }
+        base.TakeDamage(damage);
     }
 }
