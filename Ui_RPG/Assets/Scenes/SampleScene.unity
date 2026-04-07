@@ -2011,7 +2011,7 @@ MonoBehaviour:
   shieldActive: 0
   shield: {fileID: 700166347}
   shieldProtection: 0.5
-  shieldBreak: 0.2
+  shieldBreak: 0.3
 --- !u!4 &1273117292
 Transform:
   m_ObjectHideFlags: 0
