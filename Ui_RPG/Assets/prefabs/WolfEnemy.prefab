@@ -46,6 +46,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::WolfEnemy
   health: 15
   charName: Wolf
-  enemyImage: {fileID: 6608590214969390056, guid: 72b28c5e1cf134b4194d606ec9f1264c, type: 3}
+  enemyImage: {fileID: 21300000, guid: 040d3bbb63118bf43bd0ce5e01b91174, type: 3}
   minWolfDamage: 5
   maxWolfDamage: 10

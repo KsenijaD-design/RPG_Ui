@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 72b28c5e1cf134b4194d606ec9f1264c
+guid: 3d4b171c1be329b429a8be4a39669393
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6608590214969390056
-    second: 7845769_0
+      213: -8351370799658458540
+    second: stun-gun-power-200-d2e8f0b92843b562ed4d6ef85f602445_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 7845769_0
+      name: stun-gun-power-200-d2e8f0b92843b562ed4d6ef85f602445_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1451
-        height: 1487
+        x: 9
+        y: 11
+        width: 341
+        height: 539
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8e37f5569cd66bb50800000000000000
-      internalID: 6608590214969390056
+      spriteID: 452a9c25188f91c80800000000000000
+      internalID: -8351370799658458540
       vertices: []
       indices: 
       edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      7845769_0: 6608590214969390056
+      stun-gun-power-200-d2e8f0b92843b562ed4d6ef85f602445_0: -8351370799658458540
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -8,6 +8,15 @@ public class player : character
     [SerializeField] private float shieldProtection = 0.5f;
     [SerializeField] private float shieldBreak = 0.20f;
     
+    public Weapon ActiveWeapon
+    {
+        get { return activeWeapon; }
+    }
+
+    public void SetWeapon(Weapon weapon)
+    {
+        activeWeapon = weapon;
+    }
     public override void Attack(character toHit)
     {
         toHit.TakeDamage(activeWeapon);
